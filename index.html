@@ -54,9 +54,38 @@
             width: 48%;
             border-radius: 10px;
         }
+        /* Estilos del botón flotante */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px; /* Lo coloca en la parte izquierda */
+            background-color: #25d366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .whatsapp-btn img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/573136818844" class="whatsapp-btn" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+    </a>
     <div class="menu">
         <div class="image-container"></div>
             <img src="img/logoRanchoAsadosTranspa.png"  alt="Rancho Asados" class="restaurant-image">
