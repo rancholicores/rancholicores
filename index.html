@@ -80,10 +80,56 @@
             transform: scale(1.1);
         }
     </style>
+    <script>
+        function whatsapp() 
+        {
+            var url="https://wa.me/573136818844";   
+            var dia= obtenerDiaSemana();
+            switch (dia) 
+            {
+                case "Domingo":
+                    alert("Hoy Domingo prestamos servicio solo en licores sin atencion a publico en sitio desde las 5:00 PM a 00:00 am");
+                    window.open(url, "_blank")
+                break;
+                case "Lunes":
+                    alert("Hoy Lunes no prestamos servicio al publico");
+                break;
+                case "Martes":
+                    alert("Hoy Martes prestamos servicio solo en licores sin atencion a publico en sitio desde las 5:00 PM a 00:00 am");
+                    window.open(url, "_blank")
+                break;
+                case "Miercoles":
+                    alert("Hoy Miercoles prestamos servicio solo en licores sin atencion a publico en sitio desde las 5:00 PM a 00:00 am");
+                    window.open(url, "_blank")
+                break;
+                case "Jueves":
+                    alert("Hoy Jueves prestamos servicio solo en licores con atencion a publico en sitio desde las 5:00 PM a 00:00 am");
+                    window.open(url, "_blank")
+                break;
+                case "Viernes":
+                    alert("Hoy Viernes prestamos servicio en licores y comida con atencion a publico en sitio desde  las 5:00 PM a 02:00 am");
+                    window.open(url, "_blank")
+                break;
+                case "Sabado":
+                    alert("Hoy Sabado prestamos servicio en licores y comida con atencion a publico en sitio desde las 5:00 PM a 02:00 am");
+                    window.open(url, "_blank")
+                break;
+            }
+           
+        }
+
+        function obtenerDiaSemana(fecha = new Date()) 
+        {
+            const dias = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sábado"];
+            var dia = dias[fecha.getDay()];
+            return dia;
+        }
+
+    </script>
 </head>
 <body>
     <!-- Botón de WhatsApp -->
-    <a href="https://wa.me/573136818844" class="whatsapp-btn" target="_blank">
+    <a href="#" class="whatsapp-btn" onclick="whatsapp()">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
     </a>
     <div class="menu">
